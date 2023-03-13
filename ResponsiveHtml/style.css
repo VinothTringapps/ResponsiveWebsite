@@ -1,0 +1,158 @@
+body{
+    border: 3px dotted green;
+}
+.header{
+    color: #51ff01;
+    font-size: 90px;
+}
+.photos{
+    text-align: center;
+}
+p{
+    color: #cb00b0;
+    text-align: center;
+    background-color: #000;
+}
+.content{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+img{
+    width:300px;
+    height:310px;
+}
+.Imghover .span{
+    text-align: center;
+    display: inline-block;
+    font-size: large;
+    color:#0e0d0d;
+    border:2px solid #cb00b0;
+    background-color: #f4ebeb;
+    position: relative;
+    left:2%;
+    bottom:20%;
+    width: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.Imghover{
+    display: none;
+    width: 50%;
+    height: 50%;
+    position: fixed;
+    top: 10%;
+    right:10%;
+    left:20%;
+    bottom: 10%;
+}
+.Imghover img{
+    width: 600px;
+    height: 410px;
+}
+@media(max-width:1024px) {
+    .header{
+        margin: 5%;
+        font-size: 40px;
+
+    } 
+    .content{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    /* .Imghover .span{
+        left:2%;
+        top:99%;
+        bottom: auto;
+    } */
+    .Imghover img{
+        width: 500px;
+        height: 400px;
+    }
+    .footer{
+        margin:5%;
+        font-size: 40px;
+    } 
+}
+
+@media(max-width:768px) {
+    .header{
+        font-size: 50px;
+        margin:5%;
+    
+    }
+    .content{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .Imghover img{
+        width: 450px;
+        height: 350px;
+    }
+     .footer{
+        margin:5%;
+        font-size: 50px;
+    } 
+}
+
+@media(max-width:428px) {
+    .header{
+        font-size:50px;
+        margin:5%;
+    }
+    img{
+        width: 90%;
+        height: 80%;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+   .Imghover{
+    top:20%;
+
+   }
+    .Imghover img{
+        width: 300px;
+        height: 280px;
+    }
+    .footer{
+        font-size:50px;
+        margin:5%;
+    } 
+}
+
+@media (max-width:320px)
+{
+    .header{
+        font-size: 60px;
+        padding: 2%;
+        margin:5%;
+        width: 90%;
+    }
+    img{
+        width:280px;
+        height:200px;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+    .Imghover .span{
+        left:8%;
+        bottom:15%;
+    }
+    .Imghover{
+        top: 20%;
+        left:5%;
+    }
+    .Imghover img{
+        width: 250px;
+        height: 250px;
+    }
+    .footer{
+        padding:5px;
+        margin: 5%;
+        width: 90%;
+        font-size:30px;
+    } 
+}
